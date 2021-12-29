@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.RegisterActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/ic_signup_vector"
+            android:layout_gravity="left"
+            />
+        <TextView
+            android:id="@+id/register_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Welcome,"
+             android:layout_marginTop="20dp"
+            android:textSize="36sp"/>
+
+        <TextView
+            android:id="@+id/msg_reg_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="register yourself to continue..."
+            android:layout_gravity="left"
+            android:textColor="@color/grey"
+            android:textSize="20sp"/>
+
+
+
+
+
+
+    </LinearLayout>
+</FrameLayout>
