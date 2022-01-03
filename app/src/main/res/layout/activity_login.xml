@@ -23,8 +23,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="Welcome"
-            android:textColor="@color/red"
             android:textStyle="bold"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/red"
             android:textSize="26sp"
             />
 
@@ -88,7 +89,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:layout_marginTop="20dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="16dp"
             android:text="Forgot your password?"
             android:textColor="@color/red" />
     </LinearLayout>

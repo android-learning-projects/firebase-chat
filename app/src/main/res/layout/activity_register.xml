@@ -5,42 +5,97 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.RegisterActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:orientation="vertical"
+        android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:padding="20dp"
-        android:layout_height="wrap_content">
+        android:orientation="vertical"
+        android:padding="20dp">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="200dp"
-            android:scaleType="fitStart"
-            android:src="@drawable/ic_signup_vector"
             android:layout_gravity="left"
-            />
+            android:scaleType="fitStart"
+            android:src="@drawable/ic_signup_vector" />
+
         <TextView
             android:id="@+id/register_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:text="Welcome,"
-             android:layout_marginTop="20dp"
-            android:textSize="36sp"/>
+            android:text="Welcome"
+            android:textStyle="bold"
+            android:layout_gravity="start"
+            android:layout_marginTop="20dp"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/red"
+            android:textSize="26sp"/>
 
         <TextView
             android:id="@+id/msg_reg_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="register yourself to continue..."
             android:layout_gravity="left"
+            android:text="register yourself to continue..."
             android:textColor="@color/grey"
-            android:textSize="20sp"/>
+            android:textSize="14sp" />
 
 
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Name">
 
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress" />
 
+        </com.google.android.material.textfield.TextInputLayout>
 
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Password"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            android:drawableEnd="@drawable/ic_arrow_img"
+            android:layout_height="wrap_content"
+            android:text="Get Started" />
 
     </LinearLayout>
 </FrameLayout>

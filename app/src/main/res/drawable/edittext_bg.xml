@@ -8,5 +8,5 @@
         android:top="@dimen/padding_10_dp"
         android:right="@dimen/padding_10_dp"
         android:left="@dimen/padding_10_dp"/>
-    <stroke android:width="1dip" android:color="@color/colorPrimary"/>
+    <stroke android:width="1dip" android:color="?attr/colorPrimary"/>
 </shape>
