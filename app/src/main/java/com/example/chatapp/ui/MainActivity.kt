@@ -75,7 +75,7 @@ class MainActivity : AppCompatActivity(), OnItemClick {
                         binding.profileImage.setImageResource(R.drawable.profile_img)
                     } else {
                         Glide
-                            .with(this@MainActivity)
+                            .with(applicationContext)
                             .load(user?.imageURL)
                             .into(binding.profileImage)
                     }
