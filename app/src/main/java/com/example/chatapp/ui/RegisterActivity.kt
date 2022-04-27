@@ -6,13 +6,10 @@ import android.text.TextUtils
 import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
-import com.example.chatapp.R
-import com.example.chatapp.databinding.ActivityLoginBinding
 import com.example.chatapp.databinding.ActivityRegisterBinding
 import com.example.chatapp.utils.Config
 import com.example.chatapp.utils.Utils
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import timber.log.Timber
@@ -78,23 +75,21 @@ class RegisterActivity : AppCompatActivity() {
                     hashMap[Config.BIO] = ""
                     hashMap[Config.SEARCH] = name.lowercase(Locale.getDefault())
 
-                    dialog?.dismiss()
 
                     reference?.setValue(hashMap)?.addOnCompleteListener { task ->
+                        dialog?.dismiss()
                         if (task.isSuccessful) {
                             Utils.showMessage(
                                 context = this,
                                 message = "Account registered successfully!",
-                                clickListener = object : Utils.OnClickListener {
-                                    override fun onClick() {
-
-                                    }
-                                })
+                            )
 
                         } else {
                             Utils.showMessage(context = this, message = "Something went wrong!")
                         }
                     }
+
+
                 }
             } else {
                 Utils.showMessage(

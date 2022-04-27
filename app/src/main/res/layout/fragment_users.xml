@@ -1,14 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.fragments.UsersFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <EditText
+        android:id="@+id/searchUsers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/edittext_bg"
+        android:drawableLeft="@drawable/search_bg"
+        android:drawablePadding="5dp"
+        android:hint="Search user by name..."
+        android:padding="@dimen/padding_10_dp"
+        android:textColor="@color/grey"
+        android:textColorHint="@color/grey"
+        android:textCursorDrawable="@null"
+        android:textSize="16sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        tools:listitem="@layout/layout_user_item"
+        android:layout_below="@id/searchUsers"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
-</FrameLayout>
+    <!-- empty state -->
+    <include
+        android:id="@+id/esLayout"
+        layout="@layout/empty_state"
+        android:visibility="gone" />
+
+
+</RelativeLayout>
