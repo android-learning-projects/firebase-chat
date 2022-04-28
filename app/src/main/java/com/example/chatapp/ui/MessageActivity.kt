@@ -54,7 +54,7 @@ class MessageActivity : AppCompatActivity() {
                 Intent(
                     this,
                     MainActivity::class.java
-                ).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+                )
             )
         }
 

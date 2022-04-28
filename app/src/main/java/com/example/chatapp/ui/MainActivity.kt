@@ -74,10 +74,12 @@ class MainActivity : AppCompatActivity(), OnItemClick {
                     if (user?.imageURL != null && user.imageURL == "default") {
                         binding.profileImage.setImageResource(R.drawable.profile_img)
                     } else {
-                        Glide
-                            .with(this@MainActivity)
-                            .load(user?.imageURL)
-                            .into(binding.profileImage)
+                        if (!isDestroyed){
+                            Glide
+                                .with(this@MainActivity)
+                                .load(user?.imageURL)
+                                .into(binding.profileImage)
+                        }
                     }
                 }
 
@@ -125,12 +127,12 @@ class MainActivity : AppCompatActivity(), OnItemClick {
                     binding.viewPager.adapter = viewPagerAdapter
 //                    binding.tabs.setupWithViewPager(binding.viewPager)
 
-                    TabLayoutMediator(binding.tabs,binding.viewPager){tab,position->
-                        tab.text = when(position){
-                            0->"Chat"
-                            1->"Users"
-                            2->"Profile"
-                            else->""
+                    TabLayoutMediator(binding.tabs, binding.viewPager) { tab, position ->
+                        tab.text = when (position) {
+                            0 -> "Chat"
+                            1 -> "Users"
+                            2 -> "Profile"
+                            else -> ""
                         }
                     }.attach()
 
@@ -177,7 +179,7 @@ class MainActivity : AppCompatActivity(), OnItemClick {
         override fun getItemCount(): Int = fragments.size
 
         override fun createFragment(position: Int): Fragment {
-            return  fragments[position]
+            return fragments[position]
         }
 
 //        override fun getPageTitle(position: Int): CharSequence? = titles[position]
@@ -234,8 +236,9 @@ class MainActivity : AppCompatActivity(), OnItemClick {
                     Intent(
                         this,
                         LoginActivity::class.java
-                    ).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+                    )
                 );
+                finish()
                 return true
             }
         }

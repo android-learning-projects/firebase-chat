@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android/Learning/Android/ChatApp/app/src/main/res/drawable-mdpi/rounded_dialog.xml" value="0.1" />
+        <entry key="..\:/Android/Learning/Android/ChatApp/app/src/main/res/drawable/background_left.xml" value="0.15833333333333333" />
+        <entry key="..\:/Android/Learning/Android/ChatApp/app/src/main/res/drawable/background_right.xml" value="0.13541666666666666" />
+        <entry key="..\:/Android/Learning/Android/ChatApp/app/src/main/res/drawable/button_bg.xml" value="0.1" />
+        <entry key="..\:/Android/Learning/Android/ChatApp/app/src/main/res/drawable/edittext_bg.xml" value="0.1" />
+        <entry key="..\:/Android/Learning/Android/ChatApp/app/src/main/res/drawable/ic_edit.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android/Learning/Android/ChatApp/app/src/main/res/drawable/ic_login_vector.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android/Learning/Android/ChatApp/app/src/main/res/drawable/ic_picture.xml" value="0.1" />
+        <entry key="..\:/Android/Learning/Android/ChatApp/app/src/main/res/drawable/ic_send.xml" value="0.1" />
+        <entry key="..\:/Android/Learning/Android/ChatApp/app/src/main/res/drawable/ic_signup_vector.xml" value="0.4" />
+        <entry key="..\:/Android/Learning/Android/ChatApp/app/src/main/res/drawable/search_bg.xml" value="0.1" />
+        <entry key="..\:/Android/Learning/Android/ChatApp/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/Android/Learning/Android/ChatApp/app/src/main/res/layout/activity_main.xml" value="0.2259963768115942" />
+        <entry key="..\:/Android/Learning/Android/ChatApp/app/src/main/res/layout/activity_message.xml" value="0.264" />
+        <entry key="..\:/Android/Learning/Android/ChatApp/app/src/main/res/layout/activity_register.xml" value="0.1" />
+        <entry key="..\:/Android/Learning/Android/ChatApp/app/src/main/res/layout/activity_splash.xml" value="0.171875" />
+        <entry key="..\:/Android/Learning/Android/ChatApp/app/src/main/res/layout/empty_state.xml" value="0.2" />
+        <entry key="..\:/Android/Learning/Android/ChatApp/app/src/main/res/layout/fragment_chat.xml" value="0.264" />
+        <entry key="..\:/Android/Learning/Android/ChatApp/app/src/main/res/layout/fragment_profile.xml" value="0.264" />
+        <entry key="..\:/Android/Learning/Android/ChatApp/app/src/main/res/layout/fragment_users.xml" value="0.16354166666666667" />
+        <entry key="..\:/Android/Learning/Android/ChatApp/app/src/main/res/layout/layout_chat_item.xml" value="0.264" />
+        <entry key="..\:/Android/Learning/Android/ChatApp/app/src/main/res/layout/layout_custom_notification.xml" value="0.4" />
+        <entry key="..\:/Android/Learning/Android/ChatApp/app/src/main/res/layout/layout_user_item.xml" value="0.536" />
+        <entry key="..\:/Android/Learning/Android/ChatApp/app/src/main/res/layout/progressdialog.xml" value="0.176" />
+        <entry key="..\:/Android/Learning/Android/ChatApp/app/src/main/res/menu/menu.xml" value="0.15833333333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -65,8 +65,7 @@ class LoginActivity : AppCompatActivity() {
             auth?.signInWithEmailAndPassword(email, password)?.addOnCompleteListener { task ->
                 dialog?.dismiss()
                 if (task.isSuccessful) {
-                    val intent = Intent(this@LoginActivity, MainActivity::class.java)
-                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
+                    val intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
                     finish()
                 } else {
